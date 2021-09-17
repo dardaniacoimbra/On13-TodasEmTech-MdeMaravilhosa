@@ -1,61 +1,415 @@
-
 * {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+font-family: 'Abel', sans-serif;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
-    margin: 2px;
+text-decoration: none;
+color: inherit;
+margin: 2px;
+}
+
+li {
+list-style: none;
 }
 
 /* NAVBAR */
 
 .navbar{
-    background-color: #C083B9;
-    width: 100%;
-    height: 85px;
+background-color: #1C1C1C;
+}
+
+.navbar{
+background-color: #C083B9;
+width: 100%;
+height: 85px;
 }
 
 .navbar_logotipo {
-    text-align: center;
-    padding: 5px;
+text-align: center;
+padding: 5px;
 }
 
 /* -------------------------------------------------------------------------------- */
-
-
 /* HEADER */
 
+.header {
+width: 100%;
+background-image: url(./img/backgroud_header_01.jpg);
+min-height: 60vh;
+height: 500px;
+}
 
+.container__header {
+width: 100%;
+height: 100%;
+display: flex;
+flex-direction: column;
+padding: 30px;
+}
 
+.header__text {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.header__text h1 {
+text-transform: uppercase;
+font-size: 30px;
+color: #ffffff;
+text-align: center;
+}
+
+.header__container__img {
+border-radius: 8px;
+}
+
+.header__img {
+width: 100%;
+height: 240px;
+border-radius: 8px;
+}
 
 /* --- BOTAO --- */
-  
 
+.header_button {
+margin: 30px 0;
+color: #ffffff;
+background-color: #7f479b;
+border-radius: 5px;
+padding: 15px 30px;
+font-weight: bold;
+font-size: 18px;
+text-transform: uppercase;
+}
+
+.header_button:hover {
+background-color: #4B0082;
+border: 2px #000000;
+color: white;
+}
 
 /*********** HEADER   *********/
+/* Seção Maravilhosa */
 
+.maravilhosa {
+margin-top: 60px;
+display: flex;
+flex-direction: column;
+align-items: center;
+background-color: #fad8e5;
+width: 100%;
+padding: 0 20px;
+}
 
+.container__maravilhosa {
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: justify;
+gap: 20px;
+}
 
-/* SECAO Maravilhosa */
+.maravilhosa__paragrafo {
+border: 5px double #4B0082;
+padding: 20px;
+color: #462755;
+font-size: 30px;
+text-align: center;
+}
 
+.container__maravilhosa h2 {
+margin-top: 20px;
+font-size: 30px;
+color: #4B0082;
+}
 
+.sua__historia img {
+border-radius: 8px;
+width: 100%;
+}
+.sua__historia {
+margin: 20px 0;
+color: #462755;
+}
+
+.sua-historia__titulo {
+text-align: center;
+margin: 10px;
+font-size: 30px;
+color: #4B0082;
+}
+.sua__historia p {
+text-align: justify;
+margin: 15px;
+}
+
+.sua__historia p::first-letter {
+font-size: 2rem;
+color: #4B0082;
+}
+
+.sua__historia span {
+font-weight: bold;
+}
+
+q::before, q::after{
+quotes: "'";
+color: #4B0082;
+font-size: 80px;
+position: relative;
+top: 30px;
+}
 
 /* AUTORA */
 
+.sobre__container {
+margin: 30px 0;
+padding: 20px;
+background-color: #7f479b;
+}
 
+.sobre__container h2 {
+text-align: center;
+margin-bottom: 20px;
+color: white;
+}
 
-/* SECAO Recado */
+.sobre_container__img {
+display: flex;
+justify-content: center;
+border: 2px dotted white;
+border-radius: 50%;
+flex: 1;
+}
 
+.sobre_container__text {
+text-align: justify;
+flex: 2;
+}
 
+.sobre_container__text h3 {
+text-align: center;
+color: white;
+}
 
-/* FOOTER */
+.sobre_container__text p{
+margin-top: 10px;
+color: white;
+}
 
+.sobre__img {
+border-radius: 60%;
+width: 200px;
+}
+
+.autora__infos {
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 20px;
+}
+
+.footer {
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 10px;
+background-color: #C083B9;
+color: #ffffff;
+padding: 20px 0;
+text-align: center;
+font-size: 22px;
+}
+
+.icone {
+filter: brightness(100);
+}
+
+.footer-cc {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 50px;
+font-weight: 700;
+}
 
 /* MEDIA QUERY */
 
+@media (min-width: 768px) {
 
+.header {
+min-height: 40vh;
+}
+.container__header {
+flex-direction: row;
+justify-content: center;
+align-items: center;
+gap: 20px;
+padding: 30px;
+}
+.header__text {
+width: 60%;
+}
+
+.header__text h1 {
+font-size: 35px;
+}
+
+.header__container__img {
+height: 305px;
+}
+
+.header__img {
+height: 300px;
+}
+
+.sobre_container__text {
+width: 500px;
+}
+
+}
+
+@media (min-width: 1200px) {
+
+.header__text {
+margin: 10px 0;
+width: 40%;
+align-items: flex-start;
+padding-left: 20px;
+}
+
+.header__text h1 {
+font-size: 40px;
+text-align:start;
+}
+
+.header__container__img {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 345px;
+    }
+
+.header__img {
+margin: 10px 0;
+height: 340px;
+}
+
+.maravilhosa__paragrafo {
+width: 920px;
+}
+
+.sua__historia {
+width: 920px;
+display: flex;
+justify-content: center;
+gap: 20px;
+}
+
+.sua__historia img {
+border-radius: 8px;
+width: 100%;
+height: 400px;
+}
+
+.maravilhosa_text {
+width: 100%;
+}
+
+.sobre__container {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.autora__infos {
+flex-direction: row;
+align-items: center;
+width: 920px;
+gap: 40px;
+}
+
+.sobre_container__img {
+display: flex;
+justify-content: center;
+border: 2px dotted white;
+border-radius: 50%;
+}
+.sobre__img {
+width: 300px;
+}
+
+.sobre_container__text {
+width: 300px;
+}
+.footer {
+flex-direction: row;
+justify-content:space-around;
+}
+}
+
+/* Popup */
+
+.modal {
+position: fixed;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+font-family: Arial, Helvetica, sans-serif;
+background: rgba(0,0,0,0.8);
+z-index: 99999;
+opacity:0;
+-webkit-transition: opacity 400ms ease-in;
+-moz-transition: opacity 400ms ease-in;
+transition: opacity 400ms ease-in;
+pointer-events: none;
+}
+
+.modal:target {
+opacity: 1;
+pointer-events: auto;
+}
+.modal > div {
+width: 400px;
+position: relative;
+margin: 10% auto;
+padding: 15px 20px;
+background: #fff;
+}
+
+.fechar {
+position: absolute;
+width: 30px;
+right: -15px;
+top: -20px;
+text-align: center;
+line-height: 30px;
+margin-top: 5px;
+background: #ff4545;
+border-radius: 50%;
+font-size: 16px;
+color: #8d0000;
+}
+
+.header_button2 {
+margin: 10px 0;
+color: #ffffff;
+background-color: #7f479b;
+border-radius: 5px;
+padding: 15px 30px;
+font-weight: bold;
+font-size: 18px;
+margin-left: 10px;
+}
+
+.header_button2:hover {
+background-color: #4B0082;
+border: 2px #000000;
+color: white;
+}
